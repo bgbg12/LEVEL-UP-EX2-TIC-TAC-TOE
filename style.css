@@ -1,0 +1,89 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Concert One', cursive;
+	
+	
+}
+
+h1, h2{
+    text-align: center;
+	color: #ffffff;
+	font-size: 10vmin;
+	
+}
+
+
+button{
+	font-size: 0.5em;
+	padding: 1em;
+	border-radius: 8px;
+	background-color: #777777;
+	color: #ffffff;
+	border: none;
+	position: relative;
+	margin: 0.5em auto;
+	display: block;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+:root {
+	--cell-size: 100px;
+	--color:  #8b81e9; /* for hover */
+	--color-set: #682fee; /* when set */
+	--l: 10px; /* X line-width */
+}
+
+body {
+	margin: auto; 
+	--winningComb:  #682fee;
+	background: linear-gradient( #682fee, #8b81e9);
+}
+
+.board {
+	width: 100vw;
+	height: 50vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+	gap: 1.5vmin;
+	margin: 5em auto 2em 0;
+}
+
+.cell {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	background: #ffffff;
+	border: none;
+	border-radius: 8px;
+	font-size: 12vmin;
+	color:  #8b81e9;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#winningMessage{
+
+	display: flex;
+	z-index: 2;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 10vmin;
+	color: #ffffff;
+	margin: 0.7em auto;
+	
+	
+
+}
